@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 
 [RequireComponent(typeof(CharacterController))]
 public class VRJump : MonoBehaviour
@@ -12,12 +13,16 @@ public class VRJump : MonoBehaviour
     [SerializeField] private float gravity = -9.81f;
 
     private CharacterController characterController;
+    private CharacterControllerDriver characterControllerDriver; // Added CharacterControllerDriver reference
     private Vector3 playerVelocity;
     private bool isGrounded;
 
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
+        characterControllerDriver = GetComponent<CharacterControllerDriver>(); // Added CharacterControllerDriver reference
+
+        //follow that line above but for the character controller driver
     }
 
     private void OnEnable()
@@ -25,6 +30,7 @@ public class VRJump : MonoBehaviour
         if (jumpActionReference != null)
         {
             jumpActionReference.action.performed += OnJump;
+            jumpActionReference.action.Enable(); // Added .Enable()
         }
     }
 
@@ -33,6 +39,7 @@ public class VRJump : MonoBehaviour
         if (jumpActionReference != null)
         {
             jumpActionReference.action.performed -= OnJump;
+            jumpActionReference.action.Disable(); // Added .Disable()
         }
     }
 

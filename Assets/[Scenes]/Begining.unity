@@ -6629,6 +6629,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[Settings]'
       objectReference: {fileID: 0}
+    - target: {fileID: 4233238494468144202, guid: 972608fc3e8ff8f46b761aa3f85bede3,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4233238494468144202, guid: 972608fc3e8ff8f46b761aa3f85bede3,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9943f6fd25d074796af9564c9a87daef, type: 3}
+    - target: {fileID: 4233238494468144202, guid: 972608fc3e8ff8f46b761aa3f85bede3,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7730144249755899920, guid: 972608fc3e8ff8f46b761aa3f85bede3,
         type: 3}
       propertyPath: far clip plane

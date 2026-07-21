@@ -8,16 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/[Scenes]/Base VR.unity
     guid: 287e18db5f3947343ab378674424fd3e
-  - enabled: 1
+  - enabled: 0
     path: Assets/[Scenes]/Begining.unity
     guid: 94c3f8cee20254a4bb51c3d5f163b0c1
-  - enabled: 1
+  - enabled: 0
     path: Assets/[Scenes]/Hard Level.unity
     guid: 838f35ea13ac1465086f2220aae4b5b6
   - enabled: 1
     path: Assets/[Scenes]/ASMR.unity
     guid: 37068564177644f2597d4479732c6c24
-  - enabled: 1
+  - enabled: 0
     path: Assets/[Scenes]/Ending.unity
     guid: c7976bb5ab8a143ee818c1612649fb43
   m_configObjects:
