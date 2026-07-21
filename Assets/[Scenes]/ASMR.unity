@@ -877,6 +877,38 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: beb4e2871579447497fe41dfb108e2cd, type: 3}
+--- !u!1 &301257656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6054418871718216331, guid: 972608fc3e8ff8f46b761aa3f85bede3,
+    type: 3}
+  m_PrefabInstance: {fileID: 303612523}
+  m_PrefabAsset: {fileID: 0}
+--- !u!143 &301257662
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301257656}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &303612523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -940,6 +972,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[Settings]'
       objectReference: {fileID: 0}
+    - target: {fileID: 4021377193475288678, guid: 972608fc3e8ff8f46b761aa3f85bede3,
+        type: 3}
+      propertyPath: m_TagString
+      value: GameController
+      objectReference: {fileID: 0}
+    - target: {fileID: 4233238494468144202, guid: 972608fc3e8ff8f46b761aa3f85bede3,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4233238494468144202, guid: 972608fc3e8ff8f46b761aa3f85bede3,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9943f6fd25d074796af9564c9a87daef, type: 3}
+    - target: {fileID: 4233238494468144202, guid: 972608fc3e8ff8f46b761aa3f85bede3,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7730144249755899920, guid: 972608fc3e8ff8f46b761aa3f85bede3,
         type: 3}
       propertyPath: far clip plane
@@ -959,14 +1011,18 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 303612526}
+    - targetCorrespondingSourceObject: {fileID: 3795587827498558232, guid: 972608fc3e8ff8f46b761aa3f85bede3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 303612539}
     - targetCorrespondingSourceObject: {fileID: 4417745127642882701, guid: 972608fc3e8ff8f46b761aa3f85bede3,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 303612529}
-    - targetCorrespondingSourceObject: {fileID: 4417745127642882701, guid: 972608fc3e8ff8f46b761aa3f85bede3,
+    - targetCorrespondingSourceObject: {fileID: 6054418871718216331, guid: 972608fc3e8ff8f46b761aa3f85bede3,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 303612528}
+      addedObject: {fileID: 301257662}
   m_SourcePrefab: {fileID: 100100000, guid: 972608fc3e8ff8f46b761aa3f85bede3, type: 3}
 --- !u!114 &303612524 stripped
 MonoBehaviour:
@@ -1012,22 +1068,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 303612523}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &303612528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 303612527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c466514dc6d240b8ba2f00700dff2f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpActionReference: {fileID: 5682639028546266183, guid: c348712bda248c246b8c49b3db54643f,
-    type: 3}
-  jumpHeight: 1.5
-  gravity: -9.81
 --- !u!143 &303612529
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1054,6 +1094,21 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &303612539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303612525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c466514dc6d240b8ba2f00700dff2f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpActionReference: {fileID: 0}
+  jumpHeight: 1.5
+  gravity: -9.81
 --- !u!1001 &319127932
 PrefabInstance:
   m_ObjectHideFlags: 0
