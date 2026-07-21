@@ -8176,7 +8176,7 @@ MonoBehaviour:
   teleportTransform: {fileID: 0}
   rainParticle: {fileID: 0}
   targetScene: {fileID: 102900000, guid: 838f35ea13ac1465086f2220aae4b5b6, type: 3}
-  targetSceneName: Levels
+  targetSceneName: Hard Level
 --- !u!1001 &1997490114
 PrefabInstance:
   m_ObjectHideFlags: 0
