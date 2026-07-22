@@ -6638,7 +6638,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 9943f6fd25d074796af9564c9a87daef, type: 3}
+      objectReference: {fileID: 8300000, guid: b80a6d83ee1c54542896bcb90bdc4db1, type: 3}
     - target: {fileID: 4233238494468144202, guid: 972608fc3e8ff8f46b761aa3f85bede3,
         type: 3}
       propertyPath: m_PlayOnAwake
@@ -6658,7 +6658,11 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 819012788998284512, guid: 972608fc3e8ff8f46b761aa3f85bede3, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3795587827498558232, guid: 972608fc3e8ff8f46b761aa3f85bede3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1093770525}
   m_SourcePrefab: {fileID: 100100000, guid: 972608fc3e8ff8f46b761aa3f85bede3, type: 3}
 --- !u!4 &1093770522 stripped
 Transform:
@@ -6666,6 +6670,44 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1093770521}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1093770523 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1989741092945967039, guid: 972608fc3e8ff8f46b761aa3f85bede3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1093770521}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093770524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1093770524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3795587827498558232, guid: 972608fc3e8ff8f46b761aa3f85bede3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1093770521}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1093770525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093770524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 496880615cd240be960d436c1c8ae570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 1093770523}
+  m_ClimbSettings:
+    m_UseConstant: 1
+    m_ConstantValue:
+      m_AllowFreeXMovement: 1
+      m_AllowFreeYMovement: 1
+      m_AllowFreeZMovement: 1
+    m_Variable: {fileID: 0}
 --- !u!1001 &1117626182
 PrefabInstance:
   m_ObjectHideFlags: 0
