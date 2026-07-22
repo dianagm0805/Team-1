@@ -12348,8 +12348,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportTransform: {fileID: 0}
   rainParticle: {fileID: 0}
-  targetScene: {fileID: 102900000, guid: c7976bb5ab8a143ee818c1612649fb43, type: 3}
-  targetSceneName: Ending
+  targetScene: {fileID: 102900000, guid: 94c3f8cee20254a4bb51c3d5f163b0c1, type: 3}
+  targetSceneName: Begining
 --- !u!1 &1499151663
 GameObject:
   m_ObjectHideFlags: 0
